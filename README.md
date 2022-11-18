@@ -1,9 +1,13 @@
-# The Minimalist theme
+# Introduction
 
-*Minimalist is a Jekyll theme, inspired by the [Minimal](https://github.com/pages-themes/minimal) theme from GitHub. You can [preview the theme to see what it looks like](http://bdhu.github.io/minimalist), or even [use it today](#usage).*
+안녕하세요
+저는 비트캠프에서 네이버 클라우드 AIaaS개발자 양성과정을 수강중인 차민주 라고 합니다.
 
-![Demo of Minimalist](https://raw.githubusercontent.com/BDHU/minimalist/main/minimalist.png)
+이 페이지는 수강 과정 중의 과제와 제 기록이 남겨질 예정입니다.
 
+
+
+Markdown이란?
 ## Usage
 
 ### Docker
