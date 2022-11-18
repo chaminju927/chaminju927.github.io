@@ -10,93 +10,21 @@
 
 ## Markdown
 
-### Markdown의 의미와 목적
+### Markdown이란?
 
-Markdown은 일반 텍스트로 서식이 있는 문서를 작성하는데에 사용되는 마크업 언어의 일종이다.
-사용법이 매우 쉽고, 빠르게 문서를 정리할 수 있다는 장점을 갖는다. 
-
+Markdown은 일반 텍스트 문서의 양식을 편집하는 문법이다. README 파일이나 온라인 문서, 혹은 일반 텍스트 편집기로 문서 양식을 편집할 때 쓰인다. Markdown을 이용해 작성된 문서는 HTML등 다른 문서 형태로 쉽게 변환이 가능하다.
 
 
+### Markdown을 작성하는 방법
 
-### Other Methods
 
-To use the Minimalist theme:
 
-1. Add the following line to your Gemfile
-
-```ruby
-gem "jekyll-remote-theme"
-```
-
-then run `bundle install` to install the plugin.
-
-2. Add the following to your site's `_config.yml` to activate the plugin:
-
-```yml
-plugins:
-  - jekyll-remote-theme
-```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-3. Add the following line to your `config.yml` to use the theme
-
-```yml
-remote_theme: BDHU/minimalist
-```
-
-then running `bundle exec jekyll serve` for local deployment. Here is a [demo](https://github.com/BDHU/bdhu.github.io) using this theme.
-
-An example `_config.yml` file can be found [here](https://github.com/BDHU/bdhu.github.io/blob/master/_config.yml). More info can be found at [Jekyll Remote Theme](https://github.com/benbalter/jekyll-remote-theme).
-
-## Customizing
 
 ### Configuration variables
 
-Minimalist will respect the following variables, if set in your site's `_config.yml`:
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
 
-Additionally, you may choose to set the following optional variables:
 
-```yml
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-Choose light, dark, or automatically adjusting theme based on system theme:
-
-```yml
-color-scheme: auto/light/dark
-```
-
-Specify logo for the website:
-
-```yml
-logo: /assets/img/<logo_file>
-```
-
-Enable favicon by putting a `favicon.ico` in the repo's root directory and add the following line in `config.yml`:
-
-```yml
-favicon: true
-```
-
-### Customizing Sidebar
-
-You can define a list of platforms that are linked from the sidebar in `_config.yml`:
-
-```yml
-sidebar:
-  - name: Google Scholar
-    icon: <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" style="vertical-align:-0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5L12 0l12 9.5l-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14a7 7 0 0 0 0-14z" fill="currentColor"/></svg>
-    link: https://scholar.google.com/citations?user=zR6afi8AAAAJ
-  - name: GitHub
-    icon: <i class="fa-brands fa-github"></i>
-    link: https://github.com/BDHU
-  - ...
 ```
 
 For further customization of the sidebar, go to [sidebar.html](https://github.com/BDHU/minimalist/blob/main/_includes/sidebar.html) in this repo and modify it however you like. The [link-mobile.html](https://github.com/BDHU/minimalist/blob/main/_includes/links-mobile.html) customizes the sidebar's look on mobile devices. This example uses fonts from [font awesome](https://fontawesome.com) and [Iconify](https://iconify.design/). Feel free to explore/find other sources.
