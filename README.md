@@ -1,22 +1,22 @@
 # Introduction
 
-안녕하세요
+안녕하세요 !
 저는 비트캠프에서 네이버 클라우드 AIaaS개발자 양성과정을 수강중인 차민주 라고 합니다.
 
-이 페이지는 수강 과정 중의 과제와 제 기록이 남겨질 예정입니다.
+이 페이지는 수강 과정 중의 저의 과제와 기록이 남겨질 예정입니다.
 
 
 
-Markdown이란?
-## Usage
 
-### Docker
+## Markdown
 
-The simplest way is to use a Docker container. For Docker installation instructions, please refer to the offical Docker [docs](https://docs.docker.com/engine/install/). After successful installation, simply execute:
+### Markdown의 의미와 목적
 
-```bash
-./deploy.sh
-```
+Markdown은 일반 텍스트로 서식이 있는 문서를 작성하는데에 사용되는 마크업 언어의 일종이다.
+사용법이 매우 쉽고, 빠르게 문서를 정리할 수 있다는 장점을 갖는다. 
+
+
+
 
 ### Other Methods
 
