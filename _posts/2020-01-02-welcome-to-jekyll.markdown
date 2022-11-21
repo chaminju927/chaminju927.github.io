@@ -7,7 +7,6 @@ categories: jekyll update
 
 
 
-`YEAR-MONTH-DAY-title.MARKUP`
 
 
 
