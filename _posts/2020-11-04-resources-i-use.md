@@ -1,13 +1,10 @@
 ---
-title: "Resources I use"
+title: "과제 기록"
 date: "2020-11-04 11:18:30 +0200"
 author: NrdyBhu1
 category: blog 
 ---
 
-I use a wide variety of ides, tools
-and other resources that can be helpful. Below is a collection of links to
-some of the most popular resources and tools that I use.
 
 {: .note .info}
 All of the tools linked here are free of cost

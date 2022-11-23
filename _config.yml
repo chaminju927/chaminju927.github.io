@@ -4,8 +4,7 @@ desciption: >
 email: chaminju927@github.com
 baseurl: "/atlas-jekyll-theme" # the subpath of your site, e.g. /blog
 #replace nrdybhu1.github.io with your domainname.com
-url: "https://nrdybhu1.github.io" # the base hostname & protocol for your site
-twitter_username: 
+url: "https://chaminju927.github.io" # the base hostname & protocol for your site 
 github_username:  chaminju927
 markdown: kramdown
 page_excerpts: true
