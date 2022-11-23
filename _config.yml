@@ -1,11 +1,11 @@
 title: 개발 노트
-tagline: A content-first minimalist Jekyll theme for blogs
-description: This is a stupid demo site for the Jekyll theme Tao.
+tagline: by chaminju
+description: 이 페이지는 제 스터디 기록과 과제가 남겨질 공간입니다.
 
 author:
   name:   chaminju
-  url:    https://twitter.com/vfvong
-  avatar: https://avatars.githubusercontent.com/u/97170774
+  url:    
+  avatar: 
 
 plugins:
   - jekyll-paginate
