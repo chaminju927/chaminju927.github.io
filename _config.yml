@@ -1,12 +1,12 @@
-title: Atlas Jekyll Theme
+title: 개발 노트
 desciption: >
-  A jekyll theme for personal website.
-email: yourusername@gmail.com
+  by chaminju
+email: chaminju927@github.com
 baseurl: "/atlas-jekyll-theme" # the subpath of your site, e.g. /blog
 #replace nrdybhu1.github.io with your domainname.com
 url: "https://nrdybhu1.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  Jekyll
+twitter_username: 
+github_username:  chaminju927
 markdown: kramdown
 page_excerpts: true
 favicon: "/img/atlas.png"
