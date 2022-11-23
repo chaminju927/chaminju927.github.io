@@ -1,12 +1,32 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  {% feed_meta %}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" title="Jekyll releases posts" />
-  <link rel="preload" href="{{ '/css/style.css' | prepend: site.baseurl | prepend: site.url }}" as="style">
-  <link rel="stylesheet" href="{{ '/css/style.css' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" type="image/x-icon" href="{{ site.favicon | prepend: site.baseurl | prepend: site.url }}">
-  {% seo %}
-  <title>{{ site.title | prepend: page.title }}</title>
-</head>
+<header class="site-header">
+  {% if page.url == "/" %}
+  <h1 class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+  {% else %}
+  <p class="site-title"><a class="logo-text" href="{{ site.baseurl }}/">{{site.title}}</a></p>
+  {% endif %}
+  <nav class="site-navigation">
+    <div class="site-navigation-wrap">
+      <h2 class="screen-reader-text">Main navigation</h2>
+      <ul class="menu">
+        {% for item in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == item.url %}
+        {% assign current = 'nav-current' %}
+        {% endif %}
+        <li class="menu-item {{ current }}">
+          <a class="{{ current }}" href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul><!-- .menu -->
+      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
+          class="icon-close" aria-hidden="true"></span></button>
+    </div><!-- .site-navigation-wrap -->
+  </nav><!-- .site-navigation -->
+  <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+</header>
+
+{% if site.description and site.description != "" and page.url == "/" %}
+<div class="site-description fadeInDown delay_05s">
+  <p>{{ site.description }}</p>
+</div><!-- .site-description -->
+{% endif %}
