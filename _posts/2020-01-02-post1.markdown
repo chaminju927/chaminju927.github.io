@@ -1,7 +1,0 @@
----
-layout: post
-title: 과제
-category: sample
----
-# 과제
-

@@ -1,52 +1,40 @@
-<div class="sidebar-item sidebar-header">
-	<div class='sidebar-brand'>
-		<a href="/about/">{{ site.title }}</a>
-	</div>
-	<p class="lead">{{ site.description }}</p>
-	{%- if social.github -%}
-		<a rel="me" href="https://github.com/{{ social.github | cgi_escape | escape }}" title="{{ social.github | escape }}">
-			<svg class="svg-icon grey">
-				<use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}" />
-			</svg></a></li>
-	{%- endif -%}
-</div>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<div class="sidebar" id="sidebar">
+  {% if site.author and site.author.avatar %}
+    <img class="sidebar-section avatar" src="{{ site.author.avatar | relative_url }}"/>
+  {% endif %}
 
-<div class="sidebar-item sidebar-nav">
-	<ul class="nav">
-      <li class="nav-title">Records</li>
-	  <li>
-	  	<a class="nav-item" href="/">Articles</a>
-	  </li>
-	  {% assign pages_list = site.pages %}
-	  {% for node in pages_list %}
-	    {% if node.title != null %}
-	      {% if node.layout == "page" %}
-	        <li>
-	        	<a class="nav-item" href="{{ node.url }}">
-	            	{{ node.title }}
-	            </a>
-	        </li>
-	      {% endif %}
-	    {% endif %}
-	  {% endfor %}
-	</ul>
-</div>
+  {% if site.description %}
+    <p class="sidebar-section">
+      {{ site.description }}
+    </p>
+  {% endif %}
 
-<div class="sidebar-item sidebar-nav">
-  	<ul class="nav">
-			<li class="nav-title">Categories</li>
-	    {% for category in site.categories %}
-	    <li>
-	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-				<span class="name">{{ category | first }}</span>
-				<span class="badge">{{ category | last | size }}</span>
-	    	</a>
- 		</li>
-	    {% endfor %}
-	  </nav>
-	</ul>
-</div>
+  {% if site.data.navigation %}
+    <nav class="sidebar-section nav">
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a class="{% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
 
-<div class="sidebar-item sidebar-footer">
-	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
+  {% if site.data.social %}
+  <div class="sidebar-section social">
+    {% for social in site.data.social %}
+      <a href="{{ social.url }}" target="_blank">
+        <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p class="sidebar-section power">
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/vfvong/jekyll-theme-tao" target="_blank">Tao</a>
+  </p>
 </div>
