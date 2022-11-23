@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 강의 노트
 title:  
 color:  teal
 width:   6 
