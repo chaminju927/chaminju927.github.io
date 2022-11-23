@@ -1,16 +1,33 @@
-title: 개발 노트
-tagline: by chaminju
-description: 이 페이지는 제 스터디 기록과 과제가 남겨질 공간입니다.
-
-author:
-  name:   chaminju
-  url:    
-  avatar: 
-
+title: Atlas Jekyll Theme
+desciption: >
+  A jekyll theme for personal website.
+email: yourusername@gmail.com
+baseurl: "/atlas-jekyll-theme" # the subpath of your site, e.g. /blog
+#replace nrdybhu1.github.io with your domainname.com
+url: "https://nrdybhu1.github.io" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  Jekyll
+markdown: kramdown
+page_excerpts: true
+favicon: "/img/atlas.png"
+collections:
+  posts:
+    permalink: "/blog/:title:output_ext"
+    output: true
+defaults:
+- scope:
+    path: _posts
+    type: posts
+- scope:
+    path: ''
+  values:
+    image: "/img/preview.png"
 plugins:
-  - jekyll-paginate
+- jekyll-avatar
+- jekyll-feed
+- jekyll-redirect-from
+- jemoji
+- jekyll-paginate
 
-paginate: 2
-
-categories_path: /categories/
-tags_path: /tags/
+paginate: 5
+paginate_path: "/blog/page-:num/"
