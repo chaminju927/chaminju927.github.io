@@ -1,10 +1,36 @@
 ---
-layout: post
-title: "Basic Rules For Walking In The Mountains"
-description: "Hiking refers to walking outdoors on a trail, or off trail, for recreational purposes."
-date: 2019-01-03
+layout: Studying records
+title: "Linux 명령어 매뉴얼"
+description: 
+date: 2022-11-23
 feature_image: 
 ---
 
-## Long Distance Hiking
+## 1. 파일 시스템 탐색 기본 명령어
+### pwd
+: 현재 작업 디렉토리를 표시하는 명령어
+$ pwd
+ /home/vagrant
 
+### cd
+: 특정 디렉토리로 이동. cd 디렉토리명
+[vagrant@host1 ~]$ cd git
+[vagrant@host1 git]$
+
+### ls 
+: 현재 위치의 디렉토리 내용 리스트 출력.
+[vagrant@host1 git]$ ls
+bitcamp-ncp  bitcamp-ncp2  bitcamp-study  bitcamp-test
+
+### file
+: 리눅스 명령어로 파일 종류 확인할때 사용. file [파일명]
+$ file c.txt
+ c. txt: ASCll text
+
+### less
+: 파일 내용을 한 화면에 보여주는 명령어, 파일 내용을 보여주는 화면에서 나갈때는 q 사용
+$ less c.txt
+ 9999
+ 8888
+ 7777
+ c.txt (END)

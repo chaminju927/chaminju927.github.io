@@ -1,7 +1,7 @@
 ---
-layout: post
-title: "과제 2"
-description: "T"
+layout: Assignments
+title: "Assignment #2"
+description: ""
 date: 2019-01-04
 ---
 

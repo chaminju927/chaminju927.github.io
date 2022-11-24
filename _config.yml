@@ -34,13 +34,9 @@ navigation:
     url: /about/
   - text: Studying Records
     url: /style-guide/
-  - text: Tags
-    url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
-
+  - text: Assignments
+    url: /assignments/
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
 
 # Colors
 accent_color: '#2d72d9'
