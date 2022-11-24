@@ -32,7 +32,7 @@ navigation:
     url: /
   - text: About ME
     url: /about/
-  - text: Records
+  - text: Studying Records
     url: /style-guide/
   - text: Tags
     url: /tags/

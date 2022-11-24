@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 description: 안녕하세요 !
-feature_image: images/about.jpg
+feature_image:
 ---
 
 
