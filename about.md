@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: About Me
 title: About Me
 description: 안녕하세요 !
 feature_image:
