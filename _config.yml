@@ -12,7 +12,7 @@ lang: en-US
 title: "개발 노트"
 
 # A description of your site for meta tag, search engine results.
-description: "This page will be recorded with my various works as a junior developer"
+description: "This page will be recorded with my various works as a junior developer."
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
