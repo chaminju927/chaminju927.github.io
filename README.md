@@ -1,56 +1,44 @@
-# Scriptor
-> Scriptor is a simple, minimal, clean & responsive Jekyll theme for writers.
+## Introduction
+안녕하세요 !
+네이버 클라우드 AIaaS 개발자 과정을 수강중인 차민주 입니다.
+이 페이지는 저의 개발 기록과 과제가 남겨질 공간입니다.
 
-[Live Demo][demo] &nbsp; | &nbsp; [Download](https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme/archive/master.zip) &nbsp;
 
-[![Theme preview image](/images/scriptor-jekyll.png)][demo]
+## 과제 1
+### Markdown이란?
+Markdown은 텍스트 기반의 마크업언어로 2004년 존그루버에 의해 만들어졌으며 쉽게 쓰고 읽을 수 있으며 HTML로 변환이 가능하다. 특수기호와 문자를 이용한 매우 간단한 구조의 문법을 사용하여 웹에서도 보다 빠르게 컨텐츠를 작성하고 보다 직관적으로 인식할 수 있다.Github의 저장소 Repository에 관한 정보를 기록하는 README.md는 깃헙을 사용하는 사람이라면 누구나 가장 먼저 접하게 되는 마크다운 문서다. 마크다운을 통해서 설치방법, 소스코드 설명, 이슈 등을 간단하게 기록하고 가독성을 높일 수 있다는 강점이 있다.
+### Markdown 사용법
+#### 제목(Header)
+'#'뒤에 띄어쓰기를 하고 적는다. #의 갯수는 6개 까지 사용가능하며 갯수가 많아질수록 글자 크기는 작아진다.
+#### 줄바꿈(Line Breaks)
+띄어쓰기 2번 또는 '<br/>'로 표현한다.
+#### 글자 강조(Emphasis)
+기울여 쓰기는 _ _ 사이에 문장을 넣어서, 굵게 쓰기는 __ __ 또는 ** **사이에 문장을 넣어서 사용가능하며, * *사이에 문장을 넣으면 기울여 쓰기가 된다. 취소선은 문장 앞뒤로 ~~를 붙여 사용 가능하다.
 
-[demo]: https://scriptor-jekyll.netlify.app/
+## 과제 2
+### Hypervisor란?
+Hypervisor는 가상 머신(Virtual Machine, VM)을 생성하고 구동하는 소프트웨어다. 가상 머신 모니터(Virtual Machine Monitor, VMM)라고도 불리는 하이퍼바이저는 하이퍼바이저 운영 체제와 가상 머신의 리소스를 분리해 VM의 생성과 관리를 지원한다. 하이퍼바이저로 사용되는 물리 하드웨어를 호스트라고 하며 리소스를 사용하는 여러 VM을 게스트라고 한다. 하이퍼바이저는 두 유형으로 나뉜다.
+#### Type 1
+Bare Metal Hypervisor라고 불리는 유형1 하이퍼바이저는 호스트의 하드웨어에서 직접 구동되어 게스트 os를 관리한다.
+#### Type 2
+호스트 하이퍼바이저라고도 불리는 유형2 하이퍼바이저는 기존 운영 체제에서 소프트웨어 레이어 또는 애플리케이션으로서 구동된다. 이 하이퍼바이저는 호스트 운영 체제에서 게스트 운영 체제를 추상화하는 방식으로 작동하며, VM 리소스는 호스트 운영 체제에 따라 예약된 후 하드웨어에 대해 실행된다.
 
-## Features
 
-- Responsive design
-- Archive organized by [tags](https://scriptor-jekyll.netlify.com/tags/)
-- Disqus Comments
-- Accent color options
-- [Prism](https://prismjs.com/) syntax highlighter
 
-## Local Installation
 
-How to set up and run this theme locally in a Jekyll site.
 
-_Note: This theme cannot be configured and installed as a theme, however you can still use this repo as a theme with your own content in it._
 
-Clone the repo or fork.
 
-Set up Jekyll -please follow the official documentation that can be found on the [Jekyll docs](https://jekyllrb.com/docs/).
 
-Navigate to the repo and run `bundle install` to install the dependencies.
 
-Then run `bundle exec jekyll serve` to start the Jekyll server.
 
-## Deployment
 
-### Local Instalation
 
-To set up Jekyll on local machine please follow the official documentation that can be found here -> https://jekyllrb.com/docs/.
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
-### Manual Deployment
 
-Jekyll outputs your static site to the `_site` directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-### Netlify
 
-This theme is prepared to be hosted on [Netlify](https://www.netlify.com/). All you need to do is create a new private repository on GitHub or GitLab. Upload the theme to the repository and link your repo to Netlify. Please check [this link](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#step-2-link-to-your-github) with the step-by-step guidelines.
 
-### Amazon S3
 
-If you want to host your site on Amazon S3, you can do so by using the [s3_website application](https://github.com/laurilehmijoki/s3_website). It will push your site to Amazon S3, where it can be served like any web server, dynamically scaling to almost unlimited traffic.
 
-Also, please check the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
-
-## Licenses
-
-All files and directories are licensed under the [MIT](https://opensource.org/licenses/mit-license.php) unless explicitly stated.
