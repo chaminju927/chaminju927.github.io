@@ -33,7 +33,7 @@ navigation:
   - text: About ME
     url: /about me/
   - text: Studying Records
-    url: /studying records/
+    url: https://chaminju927.github.io/studying%20records/
   - text: Assignments
     url: /assignments/
 # The shortname for your Disqus site to enable comments.
