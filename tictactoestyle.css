@@ -1,14 +1,15 @@
 .t-style{
   border: 2px;
-  background-color: blue;
+  background-color: rgba(25, 133, 221, 0.575);
   text-align: center;
   width: 200px;
   height: 200px;
 }
 .font{
-  color: white;
+  color: rgb(29, 52, 182);
   size: 100px;
-  style: bold;
+  font-style: bold;
+  font-weight:500;
 
 }
 .h-font{
