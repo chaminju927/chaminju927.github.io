@@ -1,0 +1,22 @@
+.t-style{
+  border: 2px;
+  background-color: blue;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+.font{
+  color: white;
+  size: 100px;
+  style: bold;
+
+}
+.h-font{
+  color: red;
+  size: 200px;
+}
+
+.select{
+  display:inline-block;
+  text-align: center;
+}

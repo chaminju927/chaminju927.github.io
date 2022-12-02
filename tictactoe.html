@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="tictactoestyle.css">
+  
+  <title>tic tac toe</title>
+</head>
+
+<body>
+   <h1 class="h.font">TIC TAC TOE</h1>
+  <div class="select">
+     <h3>Select your sign</h3>
+     <div>
+       <button>O</button>
+       <button>X</button>
+     </div>
+  </div>
+  
+  <div>
+   <table class="t-style font">
+     <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+     </tr>
+     <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+     </tr>
+     <tr>
+       <td>1</td>
+       <td>2</td>
+       <td>3</td>
+     </tr>
+   </table>
+  </div>
+  
+  <h3>ReSTART !</h3>
+  
+<script>
+var tag1 = document.getElementById("td");
+
+tag1.onclick = function() {
+ 
+  var xhr = new XMLHttpRequest;
+  xhr.open("GET", "", false);
+  xhr.send();
+  
+  
+  console.log(xhr.responseText);
+  var arr = JSON.parse(xhr.responseText);
+  
+  var trList = "";
+  for (var item of arr) {
+    trList += "<tr><td>" + item.no + "</td>" +
+              "<td>" + item.title + "</td>" +
+              "<td>" + item.viewCount + "</td>" +
+              "<td>" + item.createdDate + "</td></tr>\n";
+  }
+  
+  var tag2 = document.querySelector("#ta1 > tbody");
+  tag2.innerHTML = trList;
+  
+};
+
+</script>  
+</body>
+</html>
+
+
+
+
+
+
+
+
